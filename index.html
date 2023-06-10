@@ -40,7 +40,7 @@
                 <li><a href="http://172.16.3.98/ccs/creditlimit/cl.jsp" target="_blank4">CCS</a></li>
                 <li><a href="https://www.numberingplans.com/" target="_blank5">InternationalNumbering</a></li>
                 <li><a href="http://services.globul.bg/admin/" target="_blank6">Services</a></li>
-                <li><a href="http://172.16.3.197/daxyglobal.html" target="_blank7">DAXY</a></l>
+                <li><a href="http://172.16.3.197/daxyglobal.html" target="_blank7">DAXY</a></li>
                 <li><a href="https://bpa.globul.bg/bpa/billing" target="_blank8">BPA(billing)</a></li>
                 <li><a href="https://sm.cetin.rs/" target="_blank9">CETIN</a></li>
                 <li><a href="http://172.16.217.197:8080/ords/f?p=102:LOGIN_DESKTOP:::::: " target="_blank10">APP</a></li>
@@ -164,33 +164,43 @@ Pls note that  MSISDNs in "yes " column are already sent.
     <div id="content">
         <ul class="services">
             <li id="services-html" class="HTML">
-                <h2><a href="#services-html">Заявка SQL:</a></h2>
+                <h2><a href="#services-html">Заявка SQL: проверяваме дали е паднал флага</a></h2>
                 <ul>
+                    <li> База: SCORE </li><br>
                     <li> pass: Lising_23</li>
                     <li> ЕГН:<br>
-                        select *
+                        select *<br>
                         from f_white_list
-                        WHERE egn ="
+                        WHERE egn ='****'
                     </li>
-                    <li> Булстат:<br>
-                        select *
+                    <li>select *
                         from stage_scoring.f_white_list_pros
-                        WHERE bulstat =""
+                        WHERE bulstat ='****'
                     </li>
                 </ul>
             </li>
             <li id="services-css" class="css">
-                <h2><a href="#services-css">APP</a></h2>
+                <h2><a href="#services-css">Заявка SQL: проверка на пос код за E-shop</a></h2>
                 <ul>
-                    <li> USER: CREDIT_CONTROL </li>
-                    <li> PASS: CreditControl2017 </li>
+                    <li> База: HUNTER</li><br>
+                    <li> USER: FRAUD </li><br>
+                    <li> PASS: FRAUD</li><br>
+                    <li>select *<br>
+                        from CCS3.BILLABLE_ACCOUNTS
+                        WHERE sent_to_post_code ='1799'
+                    </li>
                 </ul>
             </li>
-            <li id="services-css" class="css">
-                <h2><a href="#services-css">DAXY(разширено)</a></h2>
+            <li id="services-DAXY" class="css">
+                <h2><a href="#services-css">Заявка SQL: проверка колко предплата иска системата</a></h2>
                 <ul>
-                    <li> USER: telenor21 </li>
-                    <li> PASS: 92pk8539 </li>
+                    <li> База: SCORE DEV</li><br>
+                    <li> USER: vmilusheva </li><br>
+                    <li> PASS: Stalker1975! </li><br>
+                    <li>select *<br>
+                        from ONLINE_SCORING.P_ALL_LOGS_CONST
+                        WHERE egn ='*****'
+                    </li>
                 </ul>
             </li>
             <li id="services-sql" class="sql">
@@ -198,7 +208,8 @@ Pls note that  MSISDNs in "yes " column are already sent.
                 <ul>
                     <li> Rout for Manuals:
                         \\globul.bg\root\FRAUD CONTROL\FCD_shared\stat</li>
-                    <li> .... </li>
+                    <li> E-shop
+                        username > RHSabeva , password > Yettel345</li>
                 </ul>
             </li>
         </ul>
@@ -296,6 +307,8 @@ Pls note that  MSISDNs in "yes " column are already sent.
                             <li> - garbage tag (reconnection/ reactivation/ storn) </li><br>
                             <li> - report (warning; barring ) </li><br>
                             <li> - mails /night alarms</li><br>
+                            <li> - Пускаме мейл с обработените заявки от e-shop</li><br>
+                            <li> - SAVE на получения файл termination в съответната папка</li><br>
                         </ul>
                     </div>
                     <div class="Price-col" data-tilt>
@@ -308,6 +321,7 @@ Pls note that  MSISDNs in "yes " column are already sent.
                             <li> - ALL mail 22:00 do 9:00 </li><br>
                             <li> - FraudAlarm </li><br>
 
+
                         </ul>
                     </div>
                     <div class="Price-col" data-tilt>
@@ -318,6 +332,7 @@ Pls note that  MSISDNs in "yes " column are already sent.
                             <li> - NILA(report)</li><br>
                             <li> - FraudAlarm</li><br>
                             <li> - CreditLimit KA(mail) </li><br>
+                            <li> - Правим между 20:00 и 22:00 Е-SHOP(категория: OLD_new; NEW_new; RETENTION with device leasing; Additional leasing</li><br>
                             <li> - Вечерта преди билинг пускаме garbage reconnection и reactivation, когато не е вечер преди билинг пускаме само reactivation </li><br>
                         </ul>
                     </div>
