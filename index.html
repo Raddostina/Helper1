@@ -47,8 +47,7 @@
                 <li><a href="http://172.16.99.167/ecommunications_enu/start.swe?SWECmd=GotoView&SWEView=GB+SR+Templates+View&SWERF=1&SWEHo=172.16.99.167&SWEBU=1&SWEApplet0=Service+Request+Detail+Applet&SWERowId0=GB-87BBS06" target="_blank11">Siebel</a></li>
                 <li><a href="https://web.lakorda.com/lakorda/?main=1&db=1&auth=20180714082220526det1gsqx9iem2ze2925" target="_blank12">ЛАКОРДА</a></li>
                 <li><a href="http://192.168.0.64/acs/last2d.cgi" target="_blank13">ATM(плащания)</a></li>
-                <li><a href="Yettel - Намери баланса си!" target="_blank14">E-shop</a></li>
-
+                <li><a href="https://www.yettel.bg/bg/adminmanage" target="_blank14">E-shop</a></li>
             </ul>
         </div>
     </div>
@@ -115,7 +114,7 @@ Uvedomiavame Vi, che po slujebnata Vi karta e registrirano visoko potreblenie.Za
                 <textarea name="message">STAFF LIMIT
 Uvedomiavame Vi, che dostignahte limita na bezplatnoto potreblenie po slujebnata si karta.Za poveche informaciya, pishete na CreditControl@yettel.bg
 </textarea>
-                <textarea name="message">Staff family
+                <textarea name="message">STAFF FAMILY
 Your limit for free usage is exceeded. For more information you can contact CreditControl@yettel.bg. Yettel
 </textarea>
             </div>
@@ -167,7 +166,8 @@ Pls note that  MSISDNs in "yes " column are already sent.
                 <h2><a href="#services-html">Заявка SQL: проверяваме дали е паднал флага</a></h2>
                 <ul>
                     <li> База: SCORE </li><br>
-                    <li> pass: Lising_23</li>
+                    <li> USER: vmilusheva</li>
+                    <li> PASS: Lising_23</li>
                     <li> ЕГН:<br>
                         select *<br>
                         from f_white_list
@@ -182,7 +182,7 @@ Pls note that  MSISDNs in "yes " column are already sent.
             <li id="services-css" class="css">
                 <h2><a href="#services-css">Заявка SQL: проверка на пос код за E-shop</a></h2>
                 <ul>
-                    <li> База: HUNTER</li><br>
+                    <li> База: CCS.HUNTER.world</li><br>
                     <li> USER: FRAUD </li><br>
                     <li> PASS: FRAUD</li><br>
                     <li>select *<br>
@@ -195,10 +195,10 @@ Pls note that  MSISDNs in "yes " column are already sent.
                 <h2><a href="#services-css">Заявка SQL: проверка колко предплата иска системата</a></h2>
                 <ul>
                     <li> База: SCORE DEV</li><br>
-                    <li> USER: vmilusheva </li><br>
+                    <li> USER: VMILUSHEVA </li><br>
                     <li> PASS: Stalker1975! </li><br>
                     <li>select *<br>
-                        from ONLINE_SCORING.P_ALL_LOGS_CONST
+                        from ONLINE_SCORING.P_ALL_LOGS_CONS
                         WHERE egn ='*****'
                     </li>
                 </ul>
@@ -305,10 +305,10 @@ Pls note that  MSISDNs in "yes " column are already sent.
                             <li> - clear NPMT</li><br>
                             <li> - recalculation</li><br>
                             <li> - garbage tag (reconnection/ reactivation/ storn) </li><br>
-                            <li> - report (warning; barring ) </li><br>
-                            <li> - mails /night alarms</li><br>
+                            <li> - report (warning-new; barring ) </li><br>
+                            <li> - mails from last night/night alarms</li><br>
                             <li> - Пускаме мейл с обработените заявки от e-shop</li><br>
-                            <li> - SAVE на получения файл termination в съответната папка</li><br>
+                      
                         </ul>
                     </div>
                     <div class="Price-col" data-tilt>
@@ -316,12 +316,12 @@ Pls note that  MSISDNs in "yes " column are already sent.
                         <h3> 9:00 ~ 18:00 <span> Какво да проверя?</span></h3>
                         <ul>
                             <li> - night FraudAlarm </li><br>
+                            <li> - SAVE на получения файл termination в съответната папка</li><br>
                             <li> - non.active</li><br>
                             <li> - Lost-stolen</li><br>
-                            <li> - ALL mail 22:00 do 9:00 </li><br>
+                            <li> - ALL mail 22:00 до 9:00 </li><br>
+                            <li> - След load в 15:30 се пускаме warning-all; </li><br>
                             <li> - FraudAlarm </li><br>
-
-
                         </ul>
                     </div>
                     <div class="Price-col" data-tilt>
@@ -332,6 +332,7 @@ Pls note that  MSISDNs in "yes " column are already sent.
                             <li> - NILA(report)</li><br>
                             <li> - FraudAlarm</li><br>
                             <li> - CreditLimit KA(mail) </li><br>
+                            <li> - Проверяваме за оставени флагчета през деня</li><br>
                             <li> - Правим между 20:00 и 22:00 Е-SHOP(категория: OLD_new; NEW_new; RETENTION with device leasing; Additional leasing</li><br>
                             <li> - Вечерта преди билинг пускаме garbage reconnection и reactivation, когато не е вечер преди билинг пускаме само reactivation </li><br>
                         </ul>
