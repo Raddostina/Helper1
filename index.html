@@ -48,6 +48,8 @@
                 <li><a href="https://web.lakorda.com/lakorda/?main=1&db=1&auth=20180714082220526det1gsqx9iem2ze2925" target="_blank12">ЛАКОРДА</a></li>
                 <li><a href="http://192.168.0.64/acs/last2d.cgi" target="_blank13">ATM(плащания)</a></li>
                 <li><a href="https://www.yettel.bg/bg/adminmanage" target="_blank14">E-shop</a></li>
+                <li><a href="https://172.16.227.26/RAS/log_load.jsp" target="_blank15">Налети суми</a></li>
+                
             </ul>
         </div>
     </div>
@@ -99,24 +101,24 @@
         <li class="dropdown">
             <a href="javascript:void(0)" class="dropbtn">Коментар CCS</a>
             <div class="dropdown-content">
-                <textarea name="message">Uvedomiavame Vi,che limitat Vi e promenen na *** lv. Yettel</textarea>
-                <textarea name="message">BCL
-                    Vie nadvishihte kreditnia limit i izhodyashtite obazhdania sa spreni. Proverete dalzhimoto na *123# ili my.yettel.bg i molya, platete.Yettel</textarea>
-                <textarea name="message">BF
-Izhodyashtite Vi obazhdania sa spreni. Za proverka na smetka naberete *123# Molya,platete v
-magazin ili prez my.yettel.bg. Yettel</textarea>
-                <textarea name="message">CLCH
-Po precenka na otdela za kredit kontrol, vashiat krediten limit e ** lv. Moje da bade vazstanoven po
-vashe jelanie sled ** plateni navreme fakturi. Yettel</textarea>
+                <textarea name="message">Промяна на лимит по желание на клиента  :
+                    Уведомяваме Ви,че лимитът Ви е променен на хххх лв.Йетел</textarea>
+                <textarea name="message">При активиране на карти след сторно :
+                    Вашите изходящи услуги са активирани отново. Благодарим Ви за направеното плащане.Йетел</textarea>   
+                <textarea name="message">Спрени за кр лимит :
+                    Вие надвишихте кредитния лимит и изходящите услуги са спрени. Проверете дължимото на *123*4*6#. За повече информация https://yttl.bg/CL</textarea>
+                <textarea name="message">Спрени за Fraud :
+                    Изходящите  Ви услуги са спрени. Проверете дължимото на *123*4*6#. За повече информация https://yttl.bg/CL</textarea>
+                <textarea name="message">Корпоративни клиенти отделни карти при FA :
+                    Уведомяваме Ви,че по картата Ви е регистрирано високо потребление.Моля да направите плащане от хххх лв.Йетел</textarea>    
+                <textarea name="message">Промяна на лимит по наша преценка :
+                    По преценка на отдела за кредит контрол ,кредитният Ви лимит е ххххх лв.Може да бъде възстановен по Ваше желание след хххх платени в срок фактури.Йетел</textarea>
                 <textarea name="message">STAFF USAGE
-Uvedomiavame Vi, che po slujebnata Vi karta e registrirano visoko potreblenie.Za poveche informaciya se obarnete kam CreditControl@yettel.bg. Yettel
-</textarea>
+                    Уведомяваме Ви,че по служебната Ви карта е регистрирано високо потребление. За повече информация пишете на CreditControl@yettel.bg</textarea>
                 <textarea name="message">STAFF LIMIT
-Uvedomiavame Vi, che dostignahte limita na bezplatnoto potreblenie po slujebnata si karta.Za poveche informaciya, pishete na CreditControl@yettel.bg
-</textarea>
+                    Уведомяваме Ви,че достигнахте лимита на безплатното си потребление по служебната си карта.За повече информация пишете на CreditControl@yettel.bg</textarea>
                 <textarea name="message">STAFF FAMILY
-Your limit for free usage is exceeded. For more information you can contact CreditControl@yettel.bg. Yettel
-</textarea>
+                    Уведомяваме Ви,че по една от картите Ви  е регистрирано високо потребление. За повече информация пишете на CreditControl@yettel.bg</textarea>
             </div>
         </li>
 
@@ -187,8 +189,8 @@ Pls note that  MSISDNs in "yes " column are already sent.
                     <li> USER: FRAUD </li><br>
                     <li> PASS: FRAUD</li><br>
                     <li>select *<br>
-                        from CCS3.BILLABLE_ACCOUNTS
-                        WHERE sent_to_post_code ='1799'
+                        <br>from CCS3.BILLABLE_ACCOUNTS<br>
+                        <br>WHERE sent_to_post_code ='1799'<br>
                     </li>
                 </ul>
             </li>
@@ -230,6 +232,8 @@ Pls note that  MSISDNs in "yes " column are already sent.
             <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/White_flag_waving.svg" alt="" style="float:left;width:42px;height:42px;"><br>
             <button id='multiplewindow3' class='multiplewindow3' onClick='window.open("windowpopup3.html","popupwindow3","width=300,height=200");' data-modal-target="#modal">Credit Limit Change:</button>
         </div>
+
+        <a href="contact1.html" target="_blank">Anubis</a>
 
 
     </div>
