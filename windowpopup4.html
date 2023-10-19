@@ -17,20 +17,21 @@
     ПРИ ПРОБЛЕМ СИГНАЛИЗИРАЙ НА Krasimir Borisov Aladzhov(kaladjov@yettel.bg)
     <ol class="d">
       <li> Check CreditRiskControl@yettel.bg for SR type Credit Scoring</li>
-      <li> Check in  Siebel in SR for  text “Цена – общо за всички устройства xxx ” ;value parameter  must be between  100 -  1000 lv</li>
+      <li> Check in  Siebel in SR for  text “Цена – общо за всички устройства xxx ” ;value parameter  must be between  300 -  700 lv</li>
       <li> Check in CCS history of customer for :<br>
       - Status A (Active)<br>
       - Life since activation > 3 years<br>
       - Collection case -> status OPEN  –> open date  not > 3 years<br>
+      - collection case -> status SUCCESSFUL CLOSE -> close date -> diff between close date and SR open (date) = 12 months
       - LEGAL CASE  - no<br>
       - Dunning history:<br>
-        <br>*Suspend for last 3 months – no<br>
-        <br>*Early collection for last 3 months – no<br>
+        <br>*Suspend for last 6 months – no<br>
+        <br>*Early collection for last 6 months – no<br>
         <br>*Dunning letter for last 3 months – no<br>
         <br>*NILA < 5000 lv<br>
       </li>
       <li> Check in CX->Billing -> OCC history of customer for :<br>
-        -Leasing in last 3 months not > 2000 lv total value<br>
+        -Leasing in last 6 months not > 2000 lv total value<br>
         -Leasing in last  month not > 3 deals<br>
       <li> Customer Retention Program -> Частни лица – проверка<br>
         -Check ЕГН at GUI<br>
